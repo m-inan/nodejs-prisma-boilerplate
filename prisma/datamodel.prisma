@@ -1,0 +1,18 @@
+type User {
+  id: ID! @id
+  name: String!
+}
+
+type Post {
+  id: ID! @id
+  status: Status!
+  title: String!
+  slug: String!
+  content: String!
+}
+
+enum Status {
+	Published
+	Draft
+	Trash
+}

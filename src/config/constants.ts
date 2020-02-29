@@ -1,0 +1,30 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+const {
+	NODE_ENV,
+	NODE_PATH,
+	HOST,
+	PORT,
+	URL,
+	PRISMA_SECRET,
+	PRISMA_MANAGEMENT_API_SECRET,
+	SESSION_SECRET
+} = process.env;
+
+const USER_REFRESH_SECRET = <string>process.env.USER_REFRESH_SECRET;
+const USER_JWT_SECRET = <string>process.env.USER_JWT_SECRET;
+
+export {
+	NODE_ENV,
+	NODE_PATH,
+	HOST,
+	PORT,
+	URL,
+	PRISMA_SECRET,
+	PRISMA_MANAGEMENT_API_SECRET,
+	USER_JWT_SECRET,
+	USER_REFRESH_SECRET,
+	SESSION_SECRET
+};
